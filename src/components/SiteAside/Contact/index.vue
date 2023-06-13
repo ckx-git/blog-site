@@ -5,7 +5,7 @@
         <div class="icon">
           <Icon type="github" />
         </div>
-        <span>profile</span>
+        <span>Profile</span>
       </a>
     </li>
     <li>

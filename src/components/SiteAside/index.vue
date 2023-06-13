@@ -1,7 +1,7 @@
 <template>
   <div class="site-aside-container">
     <Avatar url="http://mdrs.yuanjin.tech/FgMwAPYq17So9nwVH44ltDHo7u3c" />
-    <h3 class="title">乱世一条犬</h3>
+    <h3 class="title">木童</h3>
     <Menu />
     <Contact />
     <div class="footer">

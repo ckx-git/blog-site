@@ -6,8 +6,9 @@
     <ImageLoaderTest />
     <EmptyTest />
     <MenuTest />
-    <ContactTest /> -->
-    <SiteAsideTest />
+    <ContactTest />
+    <SiteAsideTest /> -->
+    <LayoutTest />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import EmptyTest  from '@/components/Empty/test'
 import MenuTest  from '@/components/SiteAside/Menu/MenuTest'
 import ContactTest  from '@/components/SiteAside/Contact/test'
 import SiteAsideTest  from '@/components/SiteAside/test'
+import LayoutTest  from '@/components/Layout/test'
 
 export default {
   name: 'App',
@@ -31,7 +33,8 @@ export default {
     EmptyTest,
     MenuTest,
     ContactTest,
-    SiteAsideTest
+    SiteAsideTest,
+    LayoutTest
   }
 }
 </script>

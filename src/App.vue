@@ -1,44 +1,43 @@
 <template>
   <div class="app">
-    <!-- <PagerTest />
-    <AvatarTest />
-    <IconTest />
-    <ImageLoaderTest />
-    <EmptyTest />
-    <MenuTest />
-    <ContactTest />
-    <SiteAsideTest /> -->
-    <LayoutTest />
+    <div class="app-container">
+      <Layout>
+        <template #left>
+          <div class="aside">
+            <SiteAside />
+          </div>
+        </template>
+        <template #default>
+          <RouterView />
+        </template>
+      </Layout>
+    </div>
   </div>
 </template>
 
 <script>
-import PagerTest from '@/components/Pager/test'
-import AvatarTest from '@/components/Avatar/test'
-import IconTest from '@/components/Icon/test'
-import ImageLoaderTest from '@/components/ImageLoader/test'
-import EmptyTest  from '@/components/Empty/test'
-import MenuTest  from '@/components/SiteAside/Menu/MenuTest'
-import ContactTest  from '@/components/SiteAside/Contact/test'
-import SiteAsideTest  from '@/components/SiteAside/test'
-import LayoutTest  from '@/components/Layout/test'
+import Layout from '@/components/Layout'
+import SiteAside from '@/components/SiteAside'
+
 
 export default {
   name: 'App',
   components: {
-    PagerTest,
-    AvatarTest,
-    IconTest,
-    ImageLoaderTest,
-    EmptyTest,
-    MenuTest,
-    ContactTest,
-    SiteAsideTest,
-    LayoutTest
+    Layout,
+    SiteAside
   }
 }
 </script>
 
-<style>
+<style lang="less" scoped>
+@import url('~@/styles/mixin.less');  
 
+.app-container {
+  .self-fill(fixed)
+}
+
+.aside {
+  width: 250px;
+  height: 100%;
+}
 </style>

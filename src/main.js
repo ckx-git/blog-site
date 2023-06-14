@@ -4,6 +4,9 @@ import '@/styles/global.less'
 
 import router from '@/router'
 
+import showMessage  from './utils/showMessage'
+
+Vue.prototype.$message = showMessage
 
 new Vue({
   router,

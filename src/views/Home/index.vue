@@ -1,9 +1,20 @@
 <template>
-  <h1>首页</h1>
+  <div>
+    <button @click="showMessage">show</button>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    showMessage() {
+      this.$message({
+        content: '添加成功',
+        type: 'success'
+      })
+    }
+  }
+};
 </script>
 
 <style></style>
